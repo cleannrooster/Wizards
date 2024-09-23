@@ -427,6 +427,7 @@
         "type": "DAMAGE",
         "damage": {
           "spell_power_coefficient": 0.8,
+          "base_power": 4,
           "knockback": 0.5
         }
       },

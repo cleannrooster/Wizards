@@ -100,14 +100,21 @@ public class Armors {
             WizardArmor::new,
             ItemConfig.ArmorSet.with(
                     new ItemConfig.ArmorSet.Piece(1)
-                            .addAll(ItemConfig.Attribute.bonuses(List.of(SpellSchools.ARCANE.id, SpellSchools.FIRE.id, SpellSchools.FROST.id), 1)),
+                            .addAll(List.of(ItemConfig.Attribute.multiply(SpellSchools.ARCANE.id, 0.125F),
+                                    ItemConfig.Attribute.multiply(SpellSchools.FROST.id, 0.125F),
+                                    ItemConfig.Attribute.multiply(SpellSchools.FIRE.id, 0.125F))),
                     new ItemConfig.ArmorSet.Piece(3)
-                            .addAll(ItemConfig.Attribute.bonuses(List.of(SpellSchools.ARCANE.id, SpellSchools.FIRE.id, SpellSchools.FROST.id), 1)),
+                            .addAll(List.of(ItemConfig.Attribute.multiply(SpellSchools.ARCANE.id, 0.125F),
+                                    ItemConfig.Attribute.multiply(SpellSchools.FROST.id, 0.125F),
+                                    ItemConfig.Attribute.multiply(SpellSchools.FIRE.id, 0.125F))),
                     new ItemConfig.ArmorSet.Piece(2)
-                            .addAll(ItemConfig.Attribute.bonuses(List.of(SpellSchools.ARCANE.id, SpellSchools.FIRE.id, SpellSchools.FROST.id), 1)),
+                            .addAll(List.of(ItemConfig.Attribute.multiply(SpellSchools.ARCANE.id, 0.125F),
+                                    ItemConfig.Attribute.multiply(SpellSchools.ARCANE.id, 0.125F),
+                                    ItemConfig.Attribute.multiply(SpellSchools.FIRE.id, 0.125F))),
                     new ItemConfig.ArmorSet.Piece(1)
-                            .addAll(ItemConfig.Attribute.bonuses(List.of(SpellSchools.ARCANE.id, SpellSchools.FIRE.id, SpellSchools.FROST.id), 1))
-            ))
+                            .addAll(List.of(ItemConfig.Attribute.multiply(SpellSchools.ARCANE.id, 0.125F),
+                                    ItemConfig.Attribute.multiply(SpellSchools.FROST.id, 0.125F),
+                                    ItemConfig.Attribute.multiply(SpellSchools.FIRE.id, 0.125F)))))
             .armorSet();
 
     private static final float specializedRobeSpellPower = 0.25F;
